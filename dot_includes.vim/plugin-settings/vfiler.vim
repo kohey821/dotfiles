@@ -1,0 +1,1 @@
+nmap ,E :VFiler<CR>
