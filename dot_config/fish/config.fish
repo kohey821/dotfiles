@@ -73,4 +73,18 @@ if ! command -v pbpaste &>/dev/null;
 end
 
 # brew
+
 eval (/opt/homebrew/bin/brew shellenv)
+
+# asdf
+
+source (brew --prefix asdf)/libexec/asdf.fish
+
+# update & clean
+
+alias brew-update='brew update && brew upgrade'
+alias brew-cleanup='brew autoremove && brew cleanup'
+alias docker-cleanup='yes | docker system prune'
+alias trash-cleanup='yes | trash-empty'
+alias uc='brew-update && brew-cleanup && docker-cleanup && trash-cleanup'
+
