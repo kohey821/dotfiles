@@ -90,7 +90,7 @@ fi
 if ! command -v pbpaste &>/dev/null; then
   alias pbpaste='xclip -selection clipboard -o'
 fi
-{{ end -}}
+{{- end }}
 
 # brew
 
@@ -110,13 +110,13 @@ then
     done
   fi
 fi
-{{ end -}}
+{{- end }}
 
 # asdf
 
 {{ if eq .chezmoi.os "darwin" -}}
 . $(brew --prefix asdf)/libexec/asdf.sh
-{{ end -}}
+{{- end }}
 
 # update & clean
 
@@ -126,5 +126,5 @@ alias brew-cleanup='brew autoremove && brew cleanup'
 alias docker-cleanup='yes | docker system prune'
 alias trash-cleanup='yes | trash-empty'
 alias uc='brew-update && brew-cleanup && docker-cleanup && trash-cleanup'
-{{ end -}}
+{{- end }}
 

@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# install packages
+
+{{ if eq .chezmoi.os "linux" -}}
+sudo apt update && sudo apt upgrade -y && sudo apt install -y \
+    build-essential \
+    curl \
+    exa \
+    fish \
+    fzf \
+    git \
+    neovim \
+    ranger \
+    subversion \
+    tmux \
+    tmuxp \
+    trash-cli \
+    xclip
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+{{- end }}
+
+{{ if eq .chezmoi.os "darwin" -}}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install \
+    asdf \
+    coreutils \
+    curl \
+    exa \
+    fish \
+    fzf \
+    git \
+    neovim \
+    ranger \
+    subversion \
+    tmux \
+    tmuxp \
+    trash-cli
+{{- end }}
+
+# fish
+
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+fisher install jethrokuan/z
+
+# tmux
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# vim
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+nvim -c 'PlugUpdate' -c 'qa'
+
+# change shell
+
+shell=$(which fish)
+
+{{ if eq .chezmoi.os "darwin" -}}
+grep "$shell" /etc/shells || sudo bash -c "echo $shell >> /etc/shells"
+{{- end }}
+
+sudo chsh -s $shell $USER
