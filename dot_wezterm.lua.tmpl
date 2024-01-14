@@ -11,6 +11,8 @@ config.keys = {
   { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
 }
 
--- config.font_size = 9
+{{ if ne .chezmoi.os "darwin" -}}
+config.font_size = 9
+{{- end }}
 
 return config
