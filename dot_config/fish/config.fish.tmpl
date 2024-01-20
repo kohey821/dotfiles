@@ -86,6 +86,10 @@ eval (/opt/homebrew/bin/brew shellenv)
 source (brew --prefix asdf)/libexec/asdf.fish
 {{- end }}
 
+{{ if eq .chezmoi.os "linux" -}}
+source ~/.asdf/asdf.fish
+{{- end }}
+
 # update & clean
 
 {{ if eq .chezmoi.os "darwin" -}}
