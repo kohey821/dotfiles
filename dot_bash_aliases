@@ -1,0 +1,20 @@
+# exa
+
+alias ls='exa --icons' # just replace ls by exa and allow all other exa arguments
+alias l='ls -lbF' #   list, size, type
+alias ll='ls -la' # long, all
+alias llm='ll --sort=modified' # list, long, sort by modification date
+alias la='ls -lbhHigUmuSa' # all list
+alias lx='ls -lbhHigUmuSa@' # all list and extended
+alias tree='exa --tree' # tree view
+alias lS='exa -1' # one column by just names
+
+# trash-cli
+
+alias rm='trash-rm'
+
+# pbcopy & pbpaste
+
+test ! command -v pbcopy &>/dev/null && alias pbcopy='xclip -selection clipboard'
+test ! command -v pbpaste &>/dev/null && alias pbpaste='xclip -selection clipboard -o'
+
