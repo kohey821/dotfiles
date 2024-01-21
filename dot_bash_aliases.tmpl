@@ -26,6 +26,10 @@ alias g='git'
 alias vi='nvim'
 alias vim='nvim'
 
+# docker
+
+alias d='docker'
+
 # tmux
 
 alias tmux='tmux -2'
@@ -44,3 +48,19 @@ alias tp='tmuxp'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 # {{end}}
+
+# update & cleanup
+
+# {{if eq .chezmoi.os "linux"}}
+alias package-update='sudo apt update && sudo apt upgrade'
+alias package-cleanup='sudo apt autoremove && sudo apt autoclean'
+# {{end}}
+
+# {{if eq .chezmoi.os "darwin"}}
+alias package-update='brew update && brew upgrade'
+alias package-cleanup='brew autoremove && brew cleanup'
+# {{end}}
+
+alias docker-cleanup='yes | docker system prune'
+alias trash-cleanup='yes | trash-empty'
+alias uc='package-update && package-cleanup && docker-cleanup && trash-cleanup'
