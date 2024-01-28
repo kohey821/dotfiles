@@ -2,9 +2,15 @@
 # brew
 
 eval (/opt/homebrew/bin/brew shellenv)
+# {{end}}
 
 # asdf
 
+# {{if eq .chezmoi.os "linux"}}
+source ~/.asdf/asdf.fish
+# {{end}}
+
+# {{if eq .chezmoi.os "darwin"}}
 source (brew --prefix asdf)/libexec/asdf.fish
 # {{end}}
 
