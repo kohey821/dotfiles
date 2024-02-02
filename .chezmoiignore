@@ -11,3 +11,7 @@
 .zshrc
 set-up.sh
 # {{end}}
+
+# {{if ne .chezmoi.os "windows"}}
+Documents/Powershell/Profile.ps1
+# {{end}}
