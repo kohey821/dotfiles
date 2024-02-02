@@ -9,4 +9,5 @@
 .bash_aliases
 .tmux.conf
 .zshrc
+set-up.sh
 # {{end}}
