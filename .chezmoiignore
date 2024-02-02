@@ -4,6 +4,7 @@
 # {{end}}
 
 # {{if eq .chezmoi.os "windows"}}
+.config/nvim
 .config/omf
 .oh-my-zsh
 .bash_aliases
@@ -13,5 +14,7 @@ set-up.sh
 # {{end}}
 
 # {{if ne .chezmoi.os "windows"}}
-Documents/Powershell/Profile.ps1
+AppData
+Documents
+set-up.ps1
 # {{end}}

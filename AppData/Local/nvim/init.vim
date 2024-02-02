@@ -1,4 +1,4 @@
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
+set runtimepath^=~/vimfiles runtimepath+=~/vimfiles/after
 
 let &packpath = &runtimepath
 
