@@ -15,4 +15,8 @@ config.keys = {
 config.font_size = 9
 -- {{end}}
 
+-- {{if eq .chezmoi.os "windows"}}
+config.default_prog = { 'pwsh' }
+-- {{end}}
+
 return config

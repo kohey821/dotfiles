@@ -2,3 +2,11 @@
 .skhdrc
 .yabairc
 # {{end}}
+
+# {{if eq .chezmoi.os "windows"}}
+.config/omf
+.oh-my-zsh
+.bash_aliases
+.tmux.conf
+.zshrc
+# {{end}}
