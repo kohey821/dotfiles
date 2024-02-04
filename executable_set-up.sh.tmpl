@@ -16,14 +16,14 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     tmux \
     tmuxp \
     trash-cli \
-    xclip \
-    zsh
+    xclip
 
 # asdf
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 
-mkdir -p ~/.config/fish/completions; and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+mkdir -p ~/.config/fish/completions
+and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
@@ -48,10 +48,6 @@ brew install \
 # omf
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
-# omz
-
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 # tmux
 
