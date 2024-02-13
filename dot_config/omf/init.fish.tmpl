@@ -14,6 +14,20 @@ source ~/.asdf/asdf.fish
 source (brew --prefix asdf)/libexec/asdf.fish
 # {{end}}
 
+# {{if eq .chezmoi.os "linux"}}
+# {{if (.chezmoi.kernel.osrelease | lower | contains "microsoft")}}
+# fcitx5
+if type -q fcitx5
+    set -gx XMODIFIERS @im=fcitx
+    set -gx GTK_IM_MODULE fcitx
+    set -gx QT_IM_MODULE fcitx
+
+    # NOTE: autostartしないので (waylandを無効化しないと起動しない)
+    fcitx5 --disable=wayland --verbose="*=0" -d
+end
+# {{end}}
+# {{end}}
+
 # bash_aliases
 
 source ~/.bash_aliases

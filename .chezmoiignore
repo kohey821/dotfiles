@@ -6,10 +6,8 @@
 # {{if eq .chezmoi.os "windows"}}
 .config/nvim
 .config/omf
-.oh-my-zsh
 .bash_aliases
 .tmux.conf
-.zshrc
 set-up.sh
 # {{end}}
 
