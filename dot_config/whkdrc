@@ -42,7 +42,7 @@ alt + shift + return    : komorebic promote
 
 # Manipulate windows
 alt + t                 : komorebic toggle-float
-alt + shift + f         : komorebic toggle-monocle
+# alt + shift + f         : komorebic toggle-monocle
 
 # Window manager options
 alt + shift + r         : komorebic retile
