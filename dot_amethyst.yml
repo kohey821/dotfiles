@@ -1,9 +1,4 @@
-# Note due to issue 1419 (https://github.com/ianyh/Amethyst/issues/1419) some
-# config values may conflict and not work if they are the same as the default
-# values for amathyst. You can see these values on github at
-# https://github.com/ianyh/Amethyst/blob/development/Amethyst/default.amethyst
-# If you're experiencing conflicts and the settings are the same as the default,
-# comment out the commands in this file.
+# https://github.com/ianyh/Amethyst/blob/4cff96be8be166cb4c91f672a4ee43729e386147/.amethyst.sample.yml
 
 # layouts - Ordered list of layouts to use by layout key (default tall, wide, fullscreen, and column).
 layouts:
@@ -111,6 +106,11 @@ toggle-float:
 display-current-layout:
   mod: mod1
   key: i
+
+# Rerun the current layout's algorithm.
+reevaluate-windows:
+  mod: mod1
+  key: z
 
 # Automatically quit and reopen Amethyst.
 relaunch-amethyst:
