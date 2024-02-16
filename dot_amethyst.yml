@@ -158,7 +158,7 @@ follow-space-thrown-windows: true
 window-resize-step: 10
 
 # true to maintain layout state across application executions (default true).
-restore-layouts-on-launch: true
+restore-layouts-on-launch: false
 
 # true to display some optional debug information in the layout HUD (default false).
 debug-layout-info: false
