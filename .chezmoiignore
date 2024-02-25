@@ -16,6 +16,7 @@ set-up.sh
 AppData
 Documents
 .config/whkdrc
+.wslconfig
 komorebi.json
 set-up.ps1
 # {{end}}
