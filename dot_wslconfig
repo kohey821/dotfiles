@@ -1,10 +1,10 @@
 # https://learn.microsoft.com/ja-jp/windows/wsl/wsl-config
 
-[wsl]
+[wsl2]
 
 networkingMode=mirrored
-dnsTunneling=true
-autoProxy=true
+dnsTunneling=true # DNSパケットを使用せずに直接windowsと通信する
+autoProxy=true # windowsのhttp proxyを適用する
 
 [experimental]
 
