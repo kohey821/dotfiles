@@ -155,7 +155,7 @@ mouse-resizes-windows: true
 follow-space-thrown-windows: true
 
 # The integer percentage of the screen dimension to increment and decrement main pane ratios by (default 5).
-window-resize-step: 10
+window-resize-step: 5
 
 # true to maintain layout state across application executions (default true).
 restore-layouts-on-launch: false
