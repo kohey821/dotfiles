@@ -62,6 +62,6 @@ alias package-update='brew update && brew upgrade'
 alias package-cleanup='brew autoremove && brew cleanup'
 # {{end}}
 
-alias docker-cleanup='yes | docker system prune'
-alias trash-cleanup='yes | trash-empty'
+alias docker-cleanup='docker system prune'
+alias trash-cleanup='trash-empty'
 alias uc='package-update && package-cleanup && docker-cleanup && trash-cleanup'
