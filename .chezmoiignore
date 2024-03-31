@@ -7,7 +7,7 @@
 # {{if eq .chezmoi.os "windows"}}
 .config/nvim
 .config/omf
-.bash_aliases
+.aliases
 .tmux.conf
 set-up.sh
 # {{end}}
