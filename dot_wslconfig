@@ -2,8 +2,7 @@
 
 [wsl2]
 
-# 設定したいがポート問題がある
-# networkingMode=mirrored
+networkingMode=mirrored
 
 # dnsTunneling=true # DNSパケットを使用せずに直接windowsと通信する
 # autoProxy=true # windowsのhttp proxyを適用する
