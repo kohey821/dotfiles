@@ -28,7 +28,7 @@ function DockerCleanup {
 }
 New-Alias docker-cleanup DockerCleanup
 
-function UC {
+function UpdateCleanup {
     PackageUpdate && DockerCleanup
 }
-New-Alias uc UC
+New-Alias uc UpdateCleanup
