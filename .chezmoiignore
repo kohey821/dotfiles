@@ -1,9 +1,3 @@
-# {{if ne .chezmoi.os "darwin"}}
-.amethyst.yml
-.skhdrc
-.yabairc
-# {{end}}
-
 # {{if eq .chezmoi.os "windows"}}
 .config/nvim
 .config/omf
