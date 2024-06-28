@@ -17,20 +17,12 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     tmuxp \
     trash-cli \
     xclip
-
-# asdf
-
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
-
-mkdir -p ~/.config/fish/completions
-and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install \
-    asdf \
     coreutils \
     curl \
     exa \
