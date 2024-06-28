@@ -20,7 +20,7 @@ managed by [chezmoi](https://www.chezmoi.io/)
 
 4. run set up script
 
-   - Ubuntu
+   - Ubuntu/macOS
 
      ```sh
      ./set-up.sh

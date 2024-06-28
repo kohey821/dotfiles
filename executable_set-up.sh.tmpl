@@ -7,7 +7,6 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     build-essential \
     curl \
     exa \
-    fish \
     fzf \
     git \
     neovim \
@@ -16,7 +15,8 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     tmux \
     tmuxp \
     trash-cli \
-    xclip
+    xclip \
+    zsh
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
@@ -26,7 +26,6 @@ brew install \
     coreutils \
     curl \
     exa \
-    fish \
     fzf \
     git \
     neovim \
@@ -34,12 +33,9 @@ brew install \
     subversion \
     tmux \
     tmuxp \
-    trash-cli
+    trash-cli \
+    zsh
 # {{end}}
-
-# omf
-
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 # tmux
 
@@ -52,12 +48,14 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 nvim -c 'PlugUpdate' -c 'qa'
 
+# ohmyzsh
+
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+
 # change shell
 
-shell=$(which fish)
+shell=$(which zsh)
 
-# {{if eq .chezmoi.os "darwin"}}
 grep "$shell" /etc/shells || sudo bash -c "echo $shell >> /etc/shells"
-# {{end}}
 
 sudo chsh -s $shell $USER

@@ -1,8 +1,8 @@
 # {{if eq .chezmoi.os "windows"}}
 .config/nvim
-.config/omf
 .aliases
 .tmux.conf
+.zshrc
 set-up.sh
 # {{end}}
 
