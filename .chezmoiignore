@@ -9,8 +9,6 @@ set-up.sh
 # {{if ne .chezmoi.os "windows"}}
 AppData
 Documents
-.config/whkdrc
 .wslconfig
-komorebi.json
 set-up.ps1
 # {{end}}
