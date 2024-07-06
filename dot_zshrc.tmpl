@@ -1,0 +1,50 @@
+# ohmyzsh
+
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="agnoster"
+
+plugins=(
+    asdf
+    git
+    z
+    zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# envs
+
+export EDITOR=nvim
+
+export DISABLE_AUTO_TITLE='true' # required by tmuxp
+
+# aliases
+
+# (prevent rm with) trash-cli
+
+alias rm='trash-put'
+
+# {{if ne .chezmoi.os "darwin"}}
+# pbcopy & pbpaste
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+# {{end}}
+
+# update & cleanup
+
+# {{if eq .chezmoi.os "linux"}}
+alias package-update='sudo apt update && sudo apt upgrade -y'
+alias package-cleanup='sudo apt autoremove && sudo apt autoclean'
+# {{end}}
+
+# {{if eq .chezmoi.os "darwin"}}
+alias package-update='brew update && brew upgrade'
+alias package-cleanup='brew autoremove && brew cleanup'
+# {{end}}
+
+alias docker-cleanup='docker system prune -f --volumes'
+alias trash-cleanup='trash-empty -f'
+
+alias uc='package-update && package-cleanup && docker-cleanup && trash-cleanup'
