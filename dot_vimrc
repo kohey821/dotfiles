@@ -1,4 +1,4 @@
-" plugin installation
+" plugins
 
 call plug#begin()
 
