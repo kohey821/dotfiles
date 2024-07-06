@@ -273,6 +273,7 @@ nnoremap <silent> <space>g  :<C-u>CocList --normal gstatus<CR>
 let g:coc_global_extensions += [
             \ 'coc-markdownlint',
             \ 'coc-sh',
+            \ 'coc-vimlsp',
             \ ]
 
 "
@@ -281,3 +282,11 @@ let g:coc_global_extensions += [
             \ 'coc-markdown-preview-enhanced',
             \ 'coc-webview',
             \ ]
+
+" settings
+
+set mouse=a
+
+set clipboard^=unnamed
+
+set relativenumber
