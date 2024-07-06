@@ -1,1 +1,1 @@
-source ~/.includes.vim/init.vim
+source ~/.vimrc
