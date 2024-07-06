@@ -1,20 +1,11 @@
+# Oh My Posh
+
+oh-my-posh init pwsh | Invoke-Expression
+
 # cd
 
 function SetLocationUp { Set-Location .. }
 New-Alias .. SetLocationUp
-
-# git
-
-New-Alias g git
-
-# nvim
-
-New-Alias vi nvim
-New-Alias vim nvim
-
-# docker
-
-New-Alias d docker
 
 # update & cleanup
 

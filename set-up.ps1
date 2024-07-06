@@ -1,3 +1,7 @@
+# install packages
+
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
 # nvim
 
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
