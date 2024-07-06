@@ -53,7 +53,7 @@ alias pbpaste='xclip -selection clipboard -o'
 # update & cleanup
 
 # {{if eq .chezmoi.os "linux"}}
-alias package-update='sudo apt update && sudo apt upgrade'
+alias package-update='sudo apt update && sudo apt upgrade -y'
 alias package-cleanup='sudo apt autoremove && sudo apt autoclean'
 # {{end}}
 
