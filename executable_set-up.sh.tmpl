@@ -12,6 +12,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     git \
     neovim \
     ranger \
+    rigrep \
     subversion \
     tmux \
     tmuxp \
@@ -32,6 +33,7 @@ brew install \
     git \
     neovim \
     ranger \
+    rigrep \
     subversion \
     tmux \
     tmuxp \
@@ -50,14 +52,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 vim -c 'PlugUpdate' -c 'qa'
 
-# nvim
-
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-nvim -c 'PlugUpdate' -c 'qa'
-
-# Oh My Zsh
+# oh my zsh
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
