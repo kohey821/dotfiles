@@ -2,7 +2,12 @@
 
 # install packages
 
+# NOTE: temporary
+mkdir ~/bin
+
 # {{if eq .chezmoi.os "linux"}}
+# manager
+
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     build-essential \
     curl \
@@ -10,18 +15,35 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     fd-find \
     fzf \
     git \
-    neovim \
     ranger \
-    rigrep \
     subversion \
     tmux \
     tmuxp \
     trash-cli \
     xclip \
     zsh
+
+# manual
+
+# NOTE: temporary
+# neovim
+
+curl -LO https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
+tar xzvf nvim-linux64.tar.gz
+mv nvim-linux64 nvim
+rm nvim-linux64.tar.gz
+
+# NOTE: temporary
+# rigrep
+
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
+rm ripgrep_14.1.0-1_amd64.deb
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
+# manager
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install \
