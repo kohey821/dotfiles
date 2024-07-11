@@ -14,12 +14,7 @@ function PackageUpdate {
 }
 New-Alias package-update PackageUpdate
 
-function DockerCleanup {
-    docker system prune
-}
-New-Alias docker-cleanup DockerCleanup
-
 function UpdateCleanup {
-    PackageUpdate && DockerCleanup
+    PackageUpdate
 }
 New-Alias uc UpdateCleanup
