@@ -8,6 +8,7 @@ plugins=(
     asdf
     composer
     git
+    tmux
     z
     zsh-autosuggestions
 )
@@ -19,6 +20,15 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 
 export DISABLE_AUTO_TITLE='true' # required by tmuxp
+
+# paths
+
+# NOTE: temporary
+# {{if eq .chezmoi.os "linux"}}
+# neovim
+
+export PATH=~/nvim/bin:$PATH
+# {{end}}
 
 # aliases
 
@@ -45,7 +55,6 @@ alias package-update='brew update && brew upgrade'
 alias package-cleanup='brew autoremove && brew cleanup'
 # {{end}}
 
-alias docker-cleanup='docker system prune -f --volumes'
-alias trash-cleanup='trash-empty -f'
+alias trash-cleanup='trash-empty'
 
-alias uc='package-update && package-cleanup && docker-cleanup && trash-cleanup'
+alias uc='package-update && package-cleanup && trash-cleanup'
