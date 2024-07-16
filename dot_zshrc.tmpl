@@ -20,6 +20,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # oh my posh
+# {{if eq .chezmoi.os "linux"}}
+export PATH=~/bin:$PATH
+# {{end}}
 
 eval "$(oh-my-posh init zsh)"
 
