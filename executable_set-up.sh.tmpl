@@ -25,7 +25,9 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
 
 # oh my posh
 
-curl -s https://ohmyposh.dev/install.sh | bash -s
+mkdir ~/bin
+
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 
 # NOTE: temporary for version issue
 # neovim
