@@ -20,3 +20,5 @@
 	rebase = false
 [merge]
 	tool = vimdiff
+[user]
+	useConfigOnly = true
