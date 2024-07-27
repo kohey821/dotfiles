@@ -4,6 +4,8 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 
+Plug 'tpope/vim-surround'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
