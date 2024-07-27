@@ -271,6 +271,7 @@ nnoremap <silent> <space>g  :<C-u>CocList --normal gstatus<CR>
 "
 
 let g:coc_global_extensions += [
+            \ 'coc-json',
             \ 'coc-markdownlint',
             \ 'coc-sh',
             \ 'coc-vimlsp',
