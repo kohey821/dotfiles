@@ -291,3 +291,5 @@ set mouse=a
 set clipboard^=unnamed
 
 set relativenumber
+
+set colorcolumn=80,100
