@@ -7,10 +7,6 @@ oh-my-posh init pwsh | Invoke-Expression
 function SetLocationUp { Set-Location .. }
 New-Alias .. SetLocationUp
 
-# git
-
-New-Alias g git
-
 # update & cleanup
 
 function PackageUpdate {
