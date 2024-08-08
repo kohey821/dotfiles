@@ -187,7 +187,7 @@ let g:coc_global_extensions += [
             \ 'coc-explorer',
             \ ]
 
-nmap <space>e <Cmd>CocCommand explorer<CR>
+nmap <leader>e <Cmd>CocCommand explorer<CR>
 
 "
 
@@ -218,9 +218,15 @@ nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
 
 let g:coc_global_extensions += [
             \ 'coc-highlight',
-            \ 'coc-nav',
             \ 'coc-spell-checker',
             \ ]
+
+" coc-htmlと相性が悪いので一旦無効化
+" https://github.com/neoclide/coc-html/issues/57#issuecomment-1742144668
+
+" let g:coc_global_extensions += [
+"             \ 'coc-nav',
+"             \ ]
 
 "
 
@@ -256,8 +262,8 @@ autocmd User CocGitStatusChange {command}
 nmap [g <Plug>(coc-git-prevchunk)
 nmap ]g <Plug>(coc-git-nextchunk)
 " navigate conflicts of current buffer
-nmap [c <Plug>(coc-git-prevconflict)
-nmap ]c <Plug>(coc-git-nextconflict)
+" nmap [c <Plug>(coc-git-prevconflict)
+" nmap ]c <Plug>(coc-git-nextconflict)
 " show chunk diff at current position
 nmap gs <Plug>(coc-git-chunkinfo)
 " show commit contains current position
@@ -268,7 +274,7 @@ xmap ig <Plug>(coc-git-chunk-inner)
 omap ag <Plug>(coc-git-chunk-outer)
 xmap ag <Plug>(coc-git-chunk-outer)
 
-nnoremap <silent> <space>g  :<C-u>CocList --normal gstatus<CR>
+nnoremap <silent> <leader>g  :<C-u>CocList --normal gstatus<CR>
 
 "
 
