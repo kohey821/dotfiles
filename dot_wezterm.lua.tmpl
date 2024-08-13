@@ -15,7 +15,9 @@ config.font = wezterm.font_with_fallback {
   'JetBrains Mono',
 }
 
+-- {{if ne .chezmoi.os "darwin"}}
 config.font_size = 9
+-- {{end}}
 
 config.window_background_opacity = .75
 
