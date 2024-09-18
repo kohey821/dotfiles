@@ -3,3 +3,5 @@ revert = --no-backup
 [extensions]
 purge=
 shelve=
+[pager]
+pager = delta
