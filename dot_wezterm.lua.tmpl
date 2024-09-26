@@ -19,6 +19,19 @@ config.font = wezterm.font_with_fallback {
 config.font_size = 9
 -- {{end}}
 
-config.color_scheme = 'Dracula'
+function get_appearance()
+  if wezterm.gui then
+    return wezterm.gui.get_appearance()
+  end
+  return 'Dark'
+end
+function scheme_for_appearance(appearance)
+  if appearance:find 'Dark' then
+    return 'Builtin Dark'
+  else
+    return 'Builtin Light'
+  end
+end
+config.color_scheme = scheme_for_appearance(get_appearance())
 
 return config
