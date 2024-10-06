@@ -43,9 +43,7 @@ export PATH=~/nvim/bin:$PATH
 
 # aliases
 
-# (prevent rm with) trash-cli
-
-alias rm='trash-put'
+alias rm='rm -i'
 
 # {{if ne .chezmoi.os "darwin"}}
 # pbcopy & pbpaste
@@ -66,6 +64,4 @@ alias package-update='brew update && brew upgrade'
 alias package-cleanup='brew autoremove && brew cleanup'
 # {{end}}
 
-alias trash-cleanup='trash-empty'
-
-alias uc='package-update && package-cleanup && trash-cleanup'
+alias uc='package-update ; package-cleanup'
