@@ -27,9 +27,9 @@ function get_appearance()
 end
 function scheme_for_appearance(appearance)
   if appearance:find 'Dark' then
-    return 'Builtin Solarized Dark'
+    return 'Github Dark'
   else
-    return 'Builtin Solarized Light'
+    return 'Github'
   end
 end
 config.color_scheme = scheme_for_appearance(get_appearance())
