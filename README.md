@@ -1,33 +1,15 @@
 # dotfiles
 
-managed by [chezmoi](https://www.chezmoi.io/)
+managed using [chezmoi](https://www.chezmoi.io/)
 
-## set up
-
-1. [install chezmoi](https://www.chezmoi.io/install/)
-
-2. init chezmoi
+- Debian/macOS
 
    ```sh
-   chezmoi init https://github.com/Kohey821/dotfiles.git
+   ./set-up.sh
    ```
 
-3. apply chezmoi
+- Windows
 
-   ```sh
-   chezmoi apply
+   ```ps1
+   .\set-up.ps1
    ```
-
-4. run set up script
-
-   - Ubuntu/macOS
-
-     ```sh
-     ./set-up.sh
-     ```
-
-   - Windows
-
-     ```ps1
-     .\set-up.ps1
-     ```
