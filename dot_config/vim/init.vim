@@ -5,5 +5,5 @@ if exists('g:vscode')
 
 	call plug#end()
 else
-	source ~/.vim-settings/rc.vim
+	source ~/.config/vim/rc.vim
 endif
