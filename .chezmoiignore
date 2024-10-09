@@ -1,11 +1,5 @@
-# {{if eq .chezmoi.os "windows"}}
-.tmux.conf
-set-up.sh
-# {{end}}
-
 # {{if ne .chezmoi.os "windows"}}
 .wslconfig
-set-up.ps1
 # {{end}}
 
 README.md
