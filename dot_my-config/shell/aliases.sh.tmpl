@@ -1,29 +1,14 @@
-# oh my posh
-
-eval "$(oh-my-posh init zsh)"
-
-# envs
-
-export EDITOR=nvim
-
-export DISABLE_AUTO_TITLE='true' # required by tmuxp
-
-# paths
-
-# {{if eq .chezmoi.os "linux"}}
-export PATH=~/bin:$PATH
-# {{end}}
-
-# NOTE: temporary for version issue
-# {{if eq .chezmoi.os "linux"}}
-# neovim
-
-export PATH=~/nvim/bin:$PATH
-# {{end}}
-
-# aliases
+# rm
 
 alias rm='rm -i'
+
+# git
+
+alias g='git'
+
+# docker
+
+alias d='docker'
 
 # {{if ne .chezmoi.os "darwin"}}
 # pbcopy & pbpaste
