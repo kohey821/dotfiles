@@ -1,7 +1,4 @@
 # oh my posh
-# {{if eq .chezmoi.os "linux"}}
-export PATH=~/bin:$PATH
-# {{end}}
 
 eval "$(oh-my-posh init zsh)"
 
@@ -12,6 +9,10 @@ export EDITOR=nvim
 export DISABLE_AUTO_TITLE='true' # required by tmuxp
 
 # paths
+
+# {{if eq .chezmoi.os "linux"}}
+export PATH=~/bin:$PATH
+# {{end}}
 
 # NOTE: temporary for version issue
 # {{if eq .chezmoi.os "linux"}}
