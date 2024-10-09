@@ -1,13 +1,9 @@
 # {{if eq .chezmoi.os "windows"}}
-.config/
-.my-config/
 .tmux.conf
 set-up.sh
 # {{end}}
 
 # {{if ne .chezmoi.os "windows"}}
-AppData/
-Documents/
 .wslconfig
 set-up.ps1
 # {{end}}
