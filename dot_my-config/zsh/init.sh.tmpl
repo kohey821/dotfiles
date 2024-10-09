@@ -4,3 +4,12 @@ source ~/.my-config/shell/envs.sh
 # oh my posh
 
 eval "$(oh-my-posh init zsh)"
+
+# asdf
+
+. "$HOME/.asdf/asdf.sh"
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit

@@ -75,16 +75,38 @@ brew install \
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# vim
+# vim-plug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-vim -c 'PlugUpdate' -c 'qa'
-
-# neovim
-
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-nvim -c 'PlugUpdate' -c 'qa'
+# asdf
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+
+# fish
+mkdir -p ~/.config/fish/completions
+ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+
+#
+
+echo "
+include scripts:
+  fish:
+    source ~/.my-config/fish/init.fish
+  
+  ps:
+    TODO
+  
+  tmux:
+    source-file ~/.my-config/tmux/init.conf
+  
+  vim:
+    source ~/.my-config/vim/init.vim
+  
+  zsh:
+    source ~/.my-config/zsh/init.sh
+"
