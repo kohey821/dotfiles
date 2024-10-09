@@ -96,11 +96,3 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# change shell
-
-shell=$(which zsh)
-
-grep "$shell" /etc/shells || sudo bash -c "echo $shell >> /etc/shells"
-
-sudo chsh -s $shell $USER
