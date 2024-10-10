@@ -33,17 +33,21 @@ curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 # NOTE: temporary for version issue
 # neovim
 
+cd /tmp
 curl -LO https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
 tar xzvf nvim-linux64.tar.gz
-mv nvim-linux64 nvim
+mv nvim-linux64 ~/bin/nvim
 rm nvim-linux64.tar.gz
+cd -
 
 # NOTE: temporary for version issue
 # ripgrep
 
+cd /tmp
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
 sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
 rm ripgrep_14.1.0-1_amd64.deb
+cd -
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
