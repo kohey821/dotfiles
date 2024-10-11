@@ -187,7 +187,7 @@ let g:coc_global_extensions += [
             \ 'coc-explorer',
             \ ]
 
-nmap <leader>e <Cmd>CocCommand explorer<CR>
+nmap ;e <Cmd>CocCommand explorer<CR>
 
 "
 
@@ -195,8 +195,8 @@ let g:coc_global_extensions += [
             \ 'coc-fzf-preview',
             \ ]
 
-nmap <Leader>f [fzf-p]
-xmap <Leader>f [fzf-p]
+nmap ;f [fzf-p]
+xmap ;f [fzf-p]
 
 nnoremap <silent> [fzf-p]p     :<C-u>CocCommand fzf-preview.FromResources project_mru git<CR>
 nnoremap <silent> [fzf-p]gs    :<C-u>CocCommand fzf-preview.GitStatus<CR>
@@ -223,7 +223,6 @@ let g:coc_global_extensions += [
 
 " coc-htmlと相性が悪いので一旦無効化
 " https://github.com/neoclide/coc-html/issues/57#issuecomment-1742144668
-
 " let g:coc_global_extensions += [
 "             \ 'coc-nav',
 "             \ ]
@@ -274,7 +273,7 @@ xmap ig <Plug>(coc-git-chunk-inner)
 omap ag <Plug>(coc-git-chunk-outer)
 xmap ag <Plug>(coc-git-chunk-outer)
 
-nnoremap <silent> <leader>g  :<C-u>CocList --normal gstatus<CR>
+nnoremap <silent> ;g  :<C-u>CocList --normal gstatus<CR>
 
 "
 
@@ -307,3 +306,4 @@ set clipboard^=unnamed
 set relativenumber
 
 set colorcolumn=80,100
+
