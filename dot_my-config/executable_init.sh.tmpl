@@ -24,12 +24,6 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
 
 # manual
 
-# oh my posh
-
-mkdir ~/bin
-
-curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
-
 # NOTE: temporary for version issue
 # neovim
 
@@ -39,6 +33,12 @@ tar xzvf nvim-linux64.tar.gz
 mv nvim-linux64 ~/bin/nvim
 rm nvim-linux64.tar.gz
 cd -
+
+# oh my posh
+
+mkdir ~/bin
+
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 
 # NOTE: temporary for version issue
 # ripgrep
@@ -75,6 +75,14 @@ brew install \
   zsh
 # {{end}}
 
+# asdf
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+
+# fish
+mkdir -p ~/.config/fish/completions
+ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+
 # oh my zsh
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
@@ -93,14 +101,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-# asdf
-
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-
-# fish
-mkdir -p ~/.config/fish/completions
-ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 
 #
 
