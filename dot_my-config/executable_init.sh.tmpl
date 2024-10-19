@@ -27,6 +27,8 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
 # NOTE: temporary for version issue
 # neovim
 
+test ! -d ~/bin && mkdir ~/bin
+
 cd /tmp
 curl -LO https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
 tar xzvf nvim-linux64.tar.gz
@@ -36,7 +38,7 @@ cd -
 
 # oh my posh
 
-mkdir ~/bin
+test ! -d ~/bin && mkdir ~/bin
 
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 
