@@ -1,5 +1,0 @@
-# {{if ne .chezmoi.os "windows"}}
-.wslconfig
-# {{end}}
-
-README.md

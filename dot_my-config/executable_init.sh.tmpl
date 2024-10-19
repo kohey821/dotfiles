@@ -108,23 +108,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-#
-
-echo "
-include scripts:
-  fish:
-    source ~/.my-config/fish/init.fish
-  
-  ps:
-    . ~/.my-config/ps/init.ps1
-  
-  tmux:
-    source-file ~/.my-config/tmux/init.conf
-  
-  vim:
-    source ~/.my-config/vim/init.vim
-  
-  zsh:
-    source ~/.my-config/zsh/init.sh
-"

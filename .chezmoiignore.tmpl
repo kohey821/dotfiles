@@ -1,0 +1,12 @@
+README.md
+
+# {{if eq .chezmoi.os "windows"}}
+.config/
+.tmux.conf
+.zshrc
+# {{end}}
+
+# {{if ne .chezmoi.os "windows"}}
+Documents/
+.wslconfig
+# {{end}}
