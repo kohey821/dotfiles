@@ -27,3 +27,5 @@ source $ZSH/oh-my-zsh.sh
 #
 
 source ~/.my-config/shell/aliases.sh
+
+test -f ~/.after.zshrc && source ~/.after.zshrc

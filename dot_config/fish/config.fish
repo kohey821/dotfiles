@@ -11,3 +11,5 @@ source ~/.asdf/asdf.fish
 #
 
 source ~/.my-config/shell/aliases.sh
+
+test -f ~/.config/fish/after.config.fish && source ~/.config/fish/after.config.fish
