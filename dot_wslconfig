@@ -1,13 +1,1 @@
 # https://learn.microsoft.com/ja-jp/windows/wsl/wsl-config
-
-[wsl2]
-
-# https://learn.microsoft.com/ja-jp/windows/wsl/networking
-networkingMode=mirrored
-# dnsTunneling=true 
-# autoProxy=true 
-
-[experimental]
-
-autoMemoryReclaim=dropcache
-sparseVhd=true
