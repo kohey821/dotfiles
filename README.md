@@ -5,11 +5,11 @@ managed using [chezmoi](https://www.chezmoi.io/)
 - Debian/macOS
 
    ```sh
-   ./set-up.sh
+   ./.my-config/init.sh
    ```
 
 - Windows
 
    ```ps1
-   .\set-up.ps1
+   .\.my-config\init.ps1
    ```
