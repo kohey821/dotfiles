@@ -1,5 +1,15 @@
 # install packages
 
+winget install sharkdp.fd
+winget install fzf
+winget install --id Git.Git -e --source winget
+winget install dandavison.delta
+winget install jqlang.jq
+winget install Neovim.Neovim
+winget install --id Microsoft.PowerShell --source winget
+winget install BurntSushi.ripgrep.MSVC
+winget install TortoiseSVN.TortoiseSVN
+
 winget install JanDeDobbeleer.OhMyPosh -s winget
 
 # vim-plug
