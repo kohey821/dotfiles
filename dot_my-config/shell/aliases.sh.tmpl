@@ -38,17 +38,3 @@ alias t='tmux'
 alias ta='t attach-session'
 alias tk='t kill-session'
 alias tl='t list-sessions'
-
-# update & cleanup
-
-# {{if eq .chezmoi.os "linux"}}
-alias package-update='sudo apt update && sudo apt upgrade -y'
-alias package-cleanup='sudo apt autoremove && sudo apt autoclean'
-# {{end}}
-
-# {{if eq .chezmoi.os "darwin"}}
-alias package-update='brew update && brew upgrade'
-alias package-cleanup='brew autoremove && brew cleanup'
-# {{end}}
-
-alias uc='package-update ; package-cleanup'
