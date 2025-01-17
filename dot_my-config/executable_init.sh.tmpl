@@ -89,15 +89,6 @@ brew install \
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
 
-# fish
-mkdir -p ~/.config/fish/completions
-ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
-
-# fisher
-
-fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"
-fish -c "fisher update"
-
 # oh my zsh
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
