@@ -1,9 +1,5 @@
 source ~/.my-config/shell/envs.sh
 
-# oh my posh
-
-eval "$(oh-my-posh init zsh)"
-
 # asdf
 
 . "$HOME/.asdf/asdf.sh"
@@ -17,6 +13,8 @@ autoload -Uz compinit && compinit
 
 export ZSH="$HOME/.oh-my-zsh"
 
+ZSH_THEME="agnoster"
+
 plugins=(
     z
     zsh-autosuggestions
@@ -27,5 +25,3 @@ source $ZSH/oh-my-zsh.sh
 #
 
 source ~/.my-config/shell/aliases.sh
-
-test -f ~/.after.zshrc && source ~/.after.zshrc

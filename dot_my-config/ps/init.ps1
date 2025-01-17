@@ -1,7 +1,3 @@
-# oh my posh
-
-oh-my-posh init pwsh | Invoke-Expression
-
 # cd
 
 function SetLocationUp { Set-Location .. }
