@@ -26,11 +26,12 @@ function get_appearance()
   return 'Dark'
 end
 function scheme_for_appearance(appearance)
-  if appearance:find 'Dark' then
-    return 'Github Dark (Gogh)'
-  else
-    return 'Github Light (Gogh)'
-  end
+  -- NOTE: Light系は認識が困難になる色が出現しやすいので暫くDarkに固定
+  -- if appearance:find 'Dark' then
+  --   return 'Github Dark (Gogh)'
+  -- else
+  --   return 'Github Light (Gogh)'
+  return 'Github Dark (Gogh)'
 end
 config.color_scheme = scheme_for_appearance(get_appearance())
 
