@@ -1,4 +1,4 @@
-source ~/.my-config/shell/envs.sh
+. ~/.my-config/shell/envs.sh
 
 # asdf
 
@@ -20,8 +20,8 @@ plugins=(
     zsh-autosuggestions
 )
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 #
 
-source ~/.my-config/shell/aliases.sh
+. ~/.my-config/shell/aliases.sh

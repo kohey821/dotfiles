@@ -1,14 +1,3 @@
-# {{if eq .chezmoi.os "linux"}}
-export PATH=~/bin:$PATH
-# {{end}}
-
-# NOTE: temporary for version issue
-# {{if eq .chezmoi.os "linux"}}
-# neovim
-
-export PATH=~/bin/nvim/bin:$PATH
-# {{end}}
-
 export EDITOR=nvim
 
 export DISABLE_AUTO_TITLE='true' # required by tmuxp
