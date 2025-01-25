@@ -8,14 +8,12 @@
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   build-essential \
   curl \
-  fd-find \
   fish \
   fzf \
   git \
   git-delta \
   jq \
   ranger \
-  subversion \
   tmux \
   tmuxp \
   unzip \
@@ -43,15 +41,6 @@ tar xzvf nvim-linux64.tar.gz
 mv nvim-linux64 ~/bin/nvim
 rm nvim-linux64.tar.gz
 cd -
-
-# NOTE: temporary for version issue
-# ripgrep
-
-cd /tmp
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
-sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
-rm ripgrep_14.1.0-1_amd64.deb
-cd -
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
@@ -70,8 +59,6 @@ brew install \
   jq \
   neovim \
   ranger \
-  ripgrep \
-  subversion \
   tmux \
   tmuxp \
   unzip \
