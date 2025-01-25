@@ -1,6 +1,0 @@
-# https://learn.microsoft.com/ja-jp/windows/wsl/wsl-config
-
-[experimental]
-
-autoMemoryReclaim=dropcache
-sparseVhd=true

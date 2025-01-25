@@ -1,6 +1,0 @@
-; https://github.com/microsoft/wslg/wiki/WSLg-Configuration-Options-for-Debugging
-
-[system-distro-env]
-
-; restart weston compositor and Xwayland by Left-Ctrl + Left-Atl + Backspace
-WESTON_RDPRAIL_SHELL_ALLOW_ZAP=true
