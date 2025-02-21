@@ -1,3 +1,7 @@
+# variables
+
+ASDF_DOWNLOAD_FILENAME='asdf-v0.16.3-linux-amd64.tar.gz'
+
 # manager
 
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \

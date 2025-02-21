@@ -12,7 +12,17 @@
 
 # asdf
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+cd /tmp
+wget https://github.com/asdf-vm/asdf/releases/download/v0.16.3/${ASDF_DOWNLOAD_FILENAME}
+tar -xzv -f ${ASDF_DOWNLOAD_FILENAME}
+test ! -d $HOME/bin && mkdir $HOME/bin
+mv asdf $HOME/bin/
+rm ${ASDF_DOWNLOAD_FILENAME}
+cd -
+
+PATH=$PATH:$HOME/bin
+mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
+asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 
 # oh my zsh
 
