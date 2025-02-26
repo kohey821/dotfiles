@@ -1,12 +1,11 @@
-# variables
-
-ASDF_DOWNLOAD_FILENAME='asdf-v0.16.3-darwin-arm64.tar.gz'
-
-# manager
+# brew
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+#
+
 brew install \
+    asdf \
     coreutils \
     curl \
     fd \
