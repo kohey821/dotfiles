@@ -8,7 +8,6 @@ brew install \
     asdf \
     coreutils \
     curl \
-    fd \
     fish \
     fzf \
     git \
