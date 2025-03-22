@@ -16,7 +16,7 @@ brew install \
     wget \
     zsh
 
-# asdf. NOTE: 本当はbrewでInstallしたいが、Completionがうまく設定されないような気がするので
+# asdf. NOTE: Linuxに合わせる
 
 cd /tmp
 wget https://github.com/asdf-vm/asdf/releases/download/v0.16.6/asdf-v0.16.6-darwin-arm64.tar.gz
