@@ -19,8 +19,8 @@ alias l='ls -CF'
 
 # pbcopy & pbpaste
 
-command -v pbcopy || alias pbcopy='xclip -selection clipboard'
-command -v pbpaste || alias pbpaste='xclip -selection clipboard -o'
+command -v pbcopy > /dev/null || alias pbcopy='xclip -selection clipboard'
+command -v pbpaste > /dev/null || alias pbpaste='xclip -selection clipboard -o'
 
 # ranger
 
