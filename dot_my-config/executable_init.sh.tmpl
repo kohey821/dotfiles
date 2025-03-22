@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# bin dirの準備
+
+test ! -d $HOME/bin && mkdir $HOME/bin
+
+PATH=$PATH:$HOME/bin
+
 # install packages
 
 # {{if eq .chezmoi.os "linux"}}
