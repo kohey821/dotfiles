@@ -14,15 +14,6 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
     xclip \
     zsh
 
-# asdf
-
-cd /tmp
-wget https://github.com/asdf-vm/asdf/releases/download/v0.16.6/asdf-v0.16.6-linux-amd64.tar.gz
-tar -xzv -f asdf-v0.16.6-linux-amd64.tar.gz
-mv asdf $HOME/bin/
-rm asdf-v0.16.6-linux-amd64.tar.gz
-cd -
-
 # delta
 
 cd /tmp

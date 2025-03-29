@@ -15,12 +15,3 @@ brew install \
     unzip \
     wget \
     zsh
-
-# asdf. NOTE: Linuxに合わせる
-
-cd /tmp
-wget https://github.com/asdf-vm/asdf/releases/download/v0.16.6/asdf-v0.16.6-darwin-arm64.tar.gz
-tar -xzv -f asdf-v0.16.6-darwin-arm64.tar.gz
-mv asdf $HOME/bin/
-rm asdf-v0.16.6-darwin-arm64.tar.gz
-cd -
