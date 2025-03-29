@@ -8,20 +8,47 @@ PATH=$PATH:$HOME/bin
 
 # install packages
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # {{if eq .chezmoi.os "linux"}}
-. ~/.my-config/init/linux.sh
+sudo apt update && sudo apt upgrade -y && sudo apt install -y \
+  build-essential \
+  curl \
+  git \
+  unzip \
+  wget \
+  xclip
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+brew install \
+  gcc
 # {{end}}
 
 # {{if eq .chezmoi.os "darwin"}}
-. ~/.my-config/init/darwin.sh
+brew install \
+  coreutils \
+  curl \
+  git \
+  unzip \
+  wget
 # {{end}}
+
+brew install \
+  fish \
+  fzf \
+  git-delta \
+  jq \
+  neovim \
+  ranger \
+  tmux \
+  tmuxp \
+  zsh-autosuggestions \
+  zsh
 
 # oh my zsh
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-
-# zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # tpm
 
