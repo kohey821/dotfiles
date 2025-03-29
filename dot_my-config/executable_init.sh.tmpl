@@ -14,10 +14,12 @@ PATH=$PATH:$HOME/bin
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   build-essential \
   curl \
+  fish \
   git \
   unzip \
   wget \
-  xclip
+  xclip \
+  zsh
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -29,6 +31,7 @@ brew install \
 brew install \
   coreutils \
   curl \
+  fish \
   git \
   unzip \
   wget
@@ -36,7 +39,6 @@ brew install \
 
 brew install \
   asdf \
-  fish \
   fzf \
   git-delta \
   jq \
@@ -44,8 +46,7 @@ brew install \
   ranger \
   tmux \
   tmuxp \
-  zsh-autosuggestions \
-  zsh
+  zsh-autosuggestions
 
 # oh my zsh
 
