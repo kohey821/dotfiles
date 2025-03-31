@@ -1,5 +1,7 @@
 [alias]
+	# ArchiveをExtractするのでax
 	ax = ! "f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f"
+	# RevisionをOpenするのでor
 	or = ! "f() { ${2:-$EDITOR} $(git ax $1); }; f"
 
 	br = branch
