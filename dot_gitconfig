@@ -1,4 +1,5 @@
 [alias]
+	ax = !T=$(mktemp -d) && git archive $1 | tar -x -C $T && echo $T
 	br = branch
 	ci = commit
 	co = checkout
@@ -6,7 +7,6 @@
 	st = status
 	tree = log --graph --abbrev-commit --decorate --date=relative --pretty=format:'%C(auto)%h%Creset %C(auto)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
 	tree-all = tree --all
-	or = !d=$(mktemp -d) && git archive $1 | tar -x -C \"$d\" && $EDITOR \"$d\"
 [core]
 	autocrlf = input
 	editor = nvim
