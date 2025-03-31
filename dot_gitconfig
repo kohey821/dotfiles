@@ -1,5 +1,5 @@
 [alias]
-	ax = !T=$(mktemp -d) && git archive $1 | tar -x -C $T && echo $T
+	ax = ! "f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f"
 	br = branch
 	ci = commit
 	co = checkout
