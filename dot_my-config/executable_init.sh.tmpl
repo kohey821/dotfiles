@@ -2,8 +2,6 @@
 
 # install packages
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 # {{if eq .chezmoi.os "linux"}}
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   build-essential \
@@ -14,7 +12,11 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   wget \
   xclip \
   zsh
+# {{end}}
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# {{if eq .chezmoi.os "linux"}}
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 brew install \
