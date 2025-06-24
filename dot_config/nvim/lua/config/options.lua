@@ -6,3 +6,7 @@
 -- integration works automatically. Requires Neovim >= 0.10.0
 -- vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
+
+-- LSP Server to use for PHP.
+-- Set to "intelephense" to use intelephense instead of phpactor.
+vim.g.lazyvim_php_lsp = "intelephense"
