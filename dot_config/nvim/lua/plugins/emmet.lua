@@ -5,7 +5,7 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        emmet_language_server = {
+        emmet_ls = {
           filetypes = {
             "blade",
             "css",
@@ -18,7 +18,9 @@ return {
             "pug",
             "sass",
             "scss",
+            "svelte",
             "typescriptreact",
+            "vue",
           },
         },
       },
