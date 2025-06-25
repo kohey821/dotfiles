@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   zsh
 # {{end}}
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # {{if eq .chezmoi.os "linux"}}
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
