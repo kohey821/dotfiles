@@ -5,6 +5,5 @@ return {
     opts.mapping = vim.tbl_extend("force", opts.mapping, {
       ["<A-esc>"] = cmp.mapping.complete(),
     })
-    return opts
   end,
 }
