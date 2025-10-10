@@ -10,8 +10,16 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   xclip \
   zsh
 
-# TODO: delta
-
 #
 
 . ${0%/*}/common.sh
+
+# tasks
+
+cat <<EOS
+
+tasks:
+- install delta (https://dandavison.github.io/delta/installation.html)
+- install Neovim (https://github.com/neovim/neovim/blob/master/INSTALL.md#pre-built-archives-2)
+
+EOS

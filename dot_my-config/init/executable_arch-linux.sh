@@ -3,8 +3,9 @@
 sudo pacman -Syyu && sudo pacman -S \
   curl \
   fish \
-  git \
   git-delta \
+  git \
+  neovim \
   unzip \
   wget \
   xclip \
