@@ -16,7 +16,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # tasks
 
-cat <<EOS
+cat <<'EOS'
 
 tasks:
 - add ". ~/.my-config/bash/init.sh" to bash's config

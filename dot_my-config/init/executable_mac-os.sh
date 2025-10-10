@@ -23,7 +23,7 @@ brew install \
 
 # tasks
 
-cat <<EOS
+cat <<'EOS'
 
 tasks:
 - add 'eval "$(brew shellenv)' to bash's config

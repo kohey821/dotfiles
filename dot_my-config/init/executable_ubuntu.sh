@@ -21,7 +21,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
 
 # tasks
 
-cat <<EOS
+cat <<'EOS'
 
 tasks:
 - install delta (https://dandavison.github.io/delta/installation.html)
