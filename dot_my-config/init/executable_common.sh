@@ -14,12 +14,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# bin dir
-
-test ! -d $HOME/bin && mkdir $HOME/bin
-
-PATH=$PATH:$HOME/bin
-
 # tasks
 
 cat <<EOS
