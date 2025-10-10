@@ -4,7 +4,12 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   build-essential \
   curl \
   fish \
+  fzf \
   git \
+  jq \
+  ranger \
+  tmux \
+  tmuxp \
   unzip \
   wget \
   xclip \

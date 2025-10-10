@@ -3,9 +3,14 @@
 sudo pacman -Syyu && sudo pacman -S \
   curl \
   fish \
-  git-delta \
+  fzf \
   git \
+  git-delta \
+  jq \
   neovim \
+  ranger \
+  tmux \
+  tmuxp \
   unzip \
   wget \
   xclip \
