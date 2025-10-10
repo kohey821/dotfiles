@@ -1,15 +1,3 @@
 . ~/.my-config/shell/envs.sh
 
-# brew
-
-# {{if eq .chezmoi.os "linux"}}
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# {{end}}
-
-# {{if eq .chezmoi.os "darwin"}}
-eval "$(brew shellenv)"
-# {{end}}
-
-#
-
 . ~/.my-config/shell/aliases.sh

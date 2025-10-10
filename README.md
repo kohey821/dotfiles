@@ -3,5 +3,5 @@
 managed using [chezmoi](https://www.chezmoi.io/)
 
 ```sh
-./.my-config/init.sh
+./.my-config/init/<os>.sh
 ```
