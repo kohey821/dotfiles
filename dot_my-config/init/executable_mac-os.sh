@@ -15,7 +15,8 @@ brew install \
   tmux \
   tmuxp \
   unzip \
-  wget 
+  wget \
+  zellij
 
 #
 
@@ -30,3 +31,4 @@ tasks:
 - add 'eval "$(brew shellenv)' to z-shell's config
 
 EOS
+
