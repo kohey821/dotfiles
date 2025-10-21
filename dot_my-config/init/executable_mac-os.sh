@@ -5,6 +5,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 brew install \
   coreutils \
   curl \
+  eza \
   fish \
   fzf \
   git \
@@ -31,4 +32,3 @@ tasks:
 - add 'eval "$(brew shellenv)' to z-shell's config
 
 EOS
-
