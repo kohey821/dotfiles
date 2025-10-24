@@ -16,8 +16,7 @@ brew install \
   tmux \
   tmuxp \
   unzip \
-  wget \
-  zellij
+  wget
 
 #
 

@@ -32,12 +32,9 @@ alias r='ranger'
 
 alias rm='rm -i'
 
-# zellij / tmux
-
-command -v zellij >/dev/null && alias t='zellij' || alias t='tmux'
-
 # tmux
 
+alias t='tmux'
 alias ta='t attach-session'
 alias tk='t kill-session'
 alias tl='t list-sessions'
