@@ -1,6 +1,6 @@
 . ~/.my-config/shell/envs.sh
 
-#
+# antigen
 
 . ~/antigen.zsh
 
@@ -9,6 +9,10 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
+
+# starship
+
+eval "$(starship init zsh)"
 
 #
 
