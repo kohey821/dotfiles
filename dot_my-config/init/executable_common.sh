@@ -1,3 +1,7 @@
+# antigen
+
+curl -L git.io/antigen > antigen.zsh
+
 # tpm
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
