@@ -38,6 +38,7 @@ alias t='tmux'
 alias ta='t attach-session'
 alias tk='t kill-session'
 alias tl='t list-sessions'
+alias tn='t new-session'
 
 # tmuxp
 
