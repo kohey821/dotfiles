@@ -1,3 +1,7 @@
+# cd
+
+alias ..='cd ..'
+
 # fish
 
 alias f='fish'
