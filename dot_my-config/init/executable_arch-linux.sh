@@ -2,6 +2,7 @@
 
 sudo pacman -Syyu && sudo pacman -S \
   curl \
+  fd \
   fish \
   fzf \
   git \
@@ -9,6 +10,7 @@ sudo pacman -Syyu && sudo pacman -S \
   jq \
   neovim \
   ranger \
+  ripgrep \
   tmux \
   tmuxp \
   unzip \
@@ -19,3 +21,4 @@ sudo pacman -Syyu && sudo pacman -S \
 #
 
 . $HOME/.my-config/init/common.sh
+
