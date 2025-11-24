@@ -18,4 +18,4 @@ sudo pacman -Syyu && sudo pacman -S \
 
 #
 
-. ${0%/*}/common.sh
+. $HOME/.my-config/init/common.sh

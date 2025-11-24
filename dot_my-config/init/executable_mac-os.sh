@@ -20,7 +20,7 @@ brew install \
 
 #
 
-. ${0%/*}/common.sh
+. $HOME/.my-config/init/common.sh
 
 # tasks
 

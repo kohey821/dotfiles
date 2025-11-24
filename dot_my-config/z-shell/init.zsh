@@ -1,4 +1,4 @@
-. ~/.my-config/shell/envs.sh
+. $HOME/.my-config/shell/envs.sh
 
 #
 
@@ -37,4 +37,4 @@ eval "$(starship init zsh)"
 
 #
 
-. ~/.my-config/shell/aliases.sh
+. $HOME/.my-config/shell/aliases.sh
