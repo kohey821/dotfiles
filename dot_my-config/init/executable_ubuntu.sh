@@ -3,11 +3,13 @@
 sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   build-essential \
   curl \
+  fd-find \
   fish \
   fzf \
   git \
   jq \
   ranger \
+  ripgrep \
   tmux \
   tmuxp \
   unzip \

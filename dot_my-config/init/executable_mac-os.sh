@@ -6,6 +6,7 @@ brew install \
   coreutils \
   curl \
   eza \
+  fd \
   fish \
   fzf \
   git \
@@ -13,6 +14,7 @@ brew install \
   jq \
   neovim \
   ranger \
+  ripgrep \
   tmux \
   tmuxp \
   unzip \
