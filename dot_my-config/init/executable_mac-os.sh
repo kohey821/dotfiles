@@ -11,6 +11,7 @@ brew install \
   fzf \
   git \
   git-delta \
+  helix \
   jq \
   neovim \
   ranger \
