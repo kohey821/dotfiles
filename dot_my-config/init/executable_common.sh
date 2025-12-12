@@ -2,10 +2,6 @@
 
 curl -L git.io/antigen >antigen.zsh
 
-# starship
-
-curl -sS https://starship.rs/install.sh | sh
-
 # tpm
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

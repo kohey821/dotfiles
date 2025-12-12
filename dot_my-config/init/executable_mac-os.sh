@@ -14,6 +14,7 @@ brew install \
   neovim \
   ranger \
   ripgrep \
+  starship \
   tmux \
   tmuxp \
   unzip \

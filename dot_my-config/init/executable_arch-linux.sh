@@ -11,6 +11,7 @@ sudo pacman -Syyu && sudo pacman -S \
   neovim \
   ranger \
   ripgrep \
+  starship \
   tmux \
   tmuxp \
   unzip \

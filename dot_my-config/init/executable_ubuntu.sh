@@ -10,6 +10,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y \
   jq \
   ranger \
   ripgrep \
+  starship \
   tmux \
   tmuxp \
   unzip \
