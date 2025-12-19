@@ -20,5 +20,7 @@ tasks:
 - add ". $HOME/.my-config/fish/init.fish" to fish's config
 - add ". $HOME/.my-config/z-shell/init.zsh" to z-shell's config
 - install nvm (https://github.com/nvm-sh/nvm#installing-and-updating)
+- install LSs for Neovim, which is not supported by Mason
+  - Smarty
 
 EOS
