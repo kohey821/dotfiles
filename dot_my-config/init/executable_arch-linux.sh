@@ -19,7 +19,12 @@ sudo pacman -Syyu && sudo pacman -S \
   xclip \
   zsh
 
+# mise
+
+sudo sudo pacman -S mise
+
+mise use -g usage
+
 #
 
 . $HOME/.my-config/init/common.sh
-

@@ -20,6 +20,12 @@ brew install \
   unzip \
   wget
 
+# mise
+
+brew install mise
+
+mise use -g usage
+
 #
 
 . $HOME/.my-config/init/common.sh

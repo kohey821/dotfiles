@@ -35,6 +35,10 @@ antigen apply
 
 eval "$(starship init zsh)"
 
+# mise
+
+eval "$(mise activate zsh)"
+
 #
 
 . $HOME/.my-config/shell/aliases.sh
