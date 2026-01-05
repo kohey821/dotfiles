@@ -2,6 +2,7 @@
 
 #
 
+HISTFILE=~/.zsh_history # NOTE: 指定しないとDistributionの初期設定で消される？
 HISTSIZE=10000
 SAVEHIST=10000
 setopt append_history
