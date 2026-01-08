@@ -5,9 +5,17 @@
 HISTFILE=~/.zsh_history # NOTE: 指定しないとDistributionの初期設定で消される？
 HISTSIZE=10000
 SAVEHIST=10000
-setopt append_history
-# setopt share_history
-setopt hist_ignore_all_dups
+
+setopt HIST_REDUCE_BLANKS
+setopt HIST_NO_STORE # `history` 自体
+setopt HIST_IGNORE_DUPS # 直前の重複
+setopt HIST_IGNORE_ALL_DUPS # 全ての重複
+
+# setopt APPEND_HISTORY
+# or
+# setopt INC_APPEND_HISTORY
+# or
+setopt SHARE_HISTORY
 
 stty -ixon
 
