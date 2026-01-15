@@ -66,7 +66,7 @@
 
     #
 
-    ".gitconfig".source = ./git/.gitconfig;
+    ".config/git" = { source = ./git; recursive = true; };
     ".hgrc".source = ./mercurial/.hgrc;
     ".config/mise" = { source = ./mise; recursive = true; };
     ".config/nvim" = { source = ./nvim; recursive = true; };
