@@ -123,11 +123,15 @@
 
   programs.mise = {
     enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
     enableZshIntegration = true;
   };
 
   programs.starship = {
     enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
     enableZshIntegration = true;
   };
 
