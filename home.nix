@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -121,8 +121,15 @@
 
   programs.zsh = {
     enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
+    antidote = {
+      enable = true;
+      plugins = [
+        "agkozak/zsh-z"
+        "zsh-users/zsh-autosuggestions"
+        "zsh-users/zsh-completions"
+        "zsh-users/zsh-syntax-highlighting"
+      ];
+    };
     history = {
       append = true;
       ignoreAllDups = true;
@@ -143,6 +150,5 @@
       tl = "t list-sessions";
       tn = "t new-session";
     };
-    syntaxHighlighting.enable = true;
   };
 }
