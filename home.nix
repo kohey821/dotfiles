@@ -37,9 +37,11 @@
 
     #
 
+    pkgs.delta
     pkgs.fd
     pkgs.fish
     pkgs.fzf
+    pkgs.git
     pkgs.jq
     pkgs.neovim
     pkgs.ranger
@@ -64,6 +66,7 @@
 
     #
 
+    ".gitconfig".source = ./git/.gitconfig;
     ".hgrc".source = ./mercurial/.hgrc;
     ".config/mise" = { source = ./mise; recursive = true; };
     ".config/nvim" = { source = ./nvim; recursive = true; };
@@ -116,58 +119,9 @@
 
   #
 
-  programs.delta = {
-    enable = true;
-    enableGitIntegration = true;
-  };
-
   programs.eza = {
     enable = true;
     enableZshIntegration = true;
-  };
-
-  programs.git = {
-    enable = true;
-    settings = {
-      alias = {
-        # ArchiveをExtractするのでax
-        ax = "! f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f";
-        # RevisionをOpenするのでor
-        or = "! f() { \${2:-$EDITOR} $(git ax $1); }; f";
-
-        br = "branch";
-        ci = "commit";
-        co = "checkout";
-        ls = "ls-files";
-        st = "status";
-      };
-      core = {
-        autocrlf = "input";
-        filemode = "false";
-      };
-      credential = {
-        helper = "store";
-      };
-      diff = {
-        colorMoved = "dimmed-zebra";
-      };
-      fetch = {
-        prune = "true";
-      };
-      init = {
-        defaultBranch = "main";
-      };
-      merge = {
-        conflictStyle = "zdiff3";
-        tool = "vimdiff";
-      };
-      pull = {
-        rebase = "false";
-      };
-      user = {
-        useConfigOnly = "true";
-      };
-    };
   };
 
   programs.mise = {
