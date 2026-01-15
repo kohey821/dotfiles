@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -142,10 +142,8 @@
         "zsh-users/zsh-syntax-highlighting"
       ];
     };
-    history = {
-      append = true;
-      ignoreAllDups = true;
-      saveNoDups = true;
-    };
+    initContent = lib.mkOrder 1500 ''
+      source ${config.home.homeDirectory}/.config/home-manager/z-shell/rc.zsh
+    '';
   };
 }
