@@ -1,7 +1,11 @@
-# dotfiles
+# Dotfiles
 
-managed using [chezmoi](https://www.chezmoi.io/)
+## 要件
 
-```sh
-./.my-config/init/<os>.sh
-```
+- Nix
+
+## 反映
+
+本Repositoryを `~/.config/home-manager` となるようにCloneする。
+
+[Home ManagerをInstall](https://nix-community.github.io/home-manager/index.xhtml#sec-install-standalone)する。
