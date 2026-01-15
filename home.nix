@@ -100,11 +100,13 @@
 
   home.shellAliases = {
     ".." = "cd ..";
-    f = "fish";
     d = "docker";
+    f = "fish";
     g = "git";
-    ll = "ls -alF";
+    hm = "home-manager";
     la = "ls -A";
+    ll = "ls -alF";
+    ls = "eza";
     r = "ranger";
     rm = "rm -i";
     t = "tmux";
@@ -118,11 +120,6 @@
   programs.home-manager.enable = true;
 
   #
-
-  programs.eza = {
-    enable = true;
-    enableZshIntegration = true;
-  };
 
   programs.mise = {
     enable = true;
