@@ -95,6 +95,22 @@
     EDITOR = "nvim";
   };
 
+  home.shellAliases = {
+    ".." = "cd ..";
+    f = "fish";
+    d = "docker";
+    g = "git";
+    ll = "ls -alF";
+    la = "ls -A";
+    r = "ranger";
+    rm = "rm -i";
+    t = "tmux";
+    ta = "t attach-session";
+    tk = "t kill-session";
+    tl = "t list-sessions";
+    tn = "t new-session";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -179,21 +195,6 @@
       append = true;
       ignoreAllDups = true;
       saveNoDups = true;
-    };
-    shellAliases = {
-      ".." = "cd ..";
-      f = "fish";
-      d = "docker";
-      g = "git";
-      ll = "ls -alF";
-      la = "ls -A";
-      r = "ranger";
-      rm = "rm -i";
-      t = "tmux";
-      ta = "t attach-session";
-      tk = "t kill-session";
-      tl = "t list-sessions";
-      tn = "t new-session";
     };
   };
 }
