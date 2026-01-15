@@ -115,23 +115,23 @@
     enable = true;
     settings = {
       alias = {
-	      # ArchiveをExtractするのでax
-	      ax = "! f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f";
-	      # RevisionをOpenするのでor
-	      or = "! f() { \${2:-$EDITOR} $(git ax $1); }; f";
+        # ArchiveをExtractするのでax
+        ax = "! f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f";
+        # RevisionをOpenするのでor
+        or = "! f() { \${2:-$EDITOR} $(git ax $1); }; f";
 
-	      br = "branch";
-	      ci = "commit";
-	      co = "checkout";
-	      ls = "ls-files";
-	      st = "status";
+        br = "branch";
+        ci = "commit";
+        co = "checkout";
+        ls = "ls-files";
+        st = "status";
       };
       core = {
         autocrlf = "input";
         filemode = "false";
       };
       credential = {
-	      helper = "store";
+        helper = "store";
       };
       diff = {
         colorMoved = "dimmed-zebra";
