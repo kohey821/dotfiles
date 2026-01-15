@@ -103,7 +103,6 @@
     d = "docker";
     f = "fish";
     g = "git";
-    hm = "home-manager";
     la = "ls -A";
     ll = "ls -alF";
     ls = "eza";
