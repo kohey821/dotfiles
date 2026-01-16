@@ -14,8 +14,7 @@ nix profile add \
   nixpkgs#ripgrep \
   nixpkgs#starship \
   nixpkgs#tmux \
-  nixpkgs#unzip \
-  nixpkgs#zsh
+  nixpkgs#unzip
 
 nix-collect-garbage -d
 
