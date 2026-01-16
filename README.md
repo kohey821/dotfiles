@@ -2,10 +2,5 @@
 
 ## 要件
 
-- Nix
-
-## 反映
-
-本Repositoryを `~/.config/home-manager` となるようにCloneする。
-
-[Home ManagerをInstall](https://nix-community.github.io/home-manager/index.xhtml#sec-install-standalone)する。
+- [実験的な機能を有効に](https://nix.dev/manual/nix/2.33/command-ref/conf-file#conf-experimental-features)したNix
+- chezmoi

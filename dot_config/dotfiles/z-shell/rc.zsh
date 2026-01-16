@@ -1,3 +1,25 @@
+# Zinit
+
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
+
+zinit load agkozak/zsh-z
+zinit load zsh-users/zsh-autosuggestions
+zinit load zsh-users/zsh-completions
+zinit load zsh-users/zsh-syntax-highlighting
+
+#
+
+eval "$(mise activate zsh)"
+eval "$(starship init zsh)"
+
+#
+
+source $HOME/.config/dotfiles/shell/env.sh
+source $HOME/.config/dotfiles/shell/aliases.sh
+
 #
 
 HISTFILE=~/.zsh_history # NOTE: 指定しないとDistributionの初期設定で消される？
@@ -26,4 +48,3 @@ bindkey '^N' history-beginning-search-forward
 # Oh My Zshの様なCompletion
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-

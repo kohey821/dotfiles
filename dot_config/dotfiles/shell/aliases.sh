@@ -1,0 +1,15 @@
+alias '..'='cd ..'
+alias c=chezmoi
+alias d=docker
+alias f=fish
+alias g=git
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls=eza
+alias r=ranger
+alias rm='rm -i'
+alias t=tmux
+alias ta='t attach-session'
+alias tk='t kill-session'
+alias tl='t list-sessions'
+alias tn='t new-session'
