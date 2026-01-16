@@ -6,6 +6,7 @@ nix profile add \
   nixpkgs#delta \
   nixpkgs#fd \
   nixpkgs#fzf \
+  nixpkgs#gh \
   nixpkgs#jq \
   nixpkgs#mise \
   nixpkgs#neovim \
