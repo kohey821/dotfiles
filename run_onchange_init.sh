@@ -5,7 +5,6 @@
 nix profile add \
   nixpkgs#delta \
   nixpkgs#fd \
-  nixpkgs#fish \
   nixpkgs#fzf \
   nixpkgs#jq \
   nixpkgs#mise \
