@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 # Zinit
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -9,6 +12,9 @@ zinit load agkozak/zsh-z
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-completions
 zinit load zsh-users/zsh-syntax-highlighting
+
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 #
 
