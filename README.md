@@ -2,7 +2,8 @@
 
 ## 要件
 
-- chezmoi
+- macOSの場合Homebrew
+- chezmoiでのSet up
 
 ## Init
 
