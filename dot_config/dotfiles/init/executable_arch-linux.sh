@@ -28,10 +28,6 @@ sudo pacman -S --noconfirm --needed github-cli
 
 sudo pacman -S --noconfirm --needed mise
 
-# eza
-
-sudo pacman -S --noconfirm --needed eza
-
 # Neovim
 
 sudo pacman -S --noconfirm --needed neovim
@@ -43,10 +39,6 @@ sudo pacman -S --noconfirm --needed helix
 # Visual Studio Code
 
 yay -S --noconfirm --needed visual-studio-code-bin
-
-# delta
-
-sudo pacman -S --noconfirm --needed git-delta
 
 #
 

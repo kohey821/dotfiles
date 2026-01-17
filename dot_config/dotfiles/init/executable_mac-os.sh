@@ -26,10 +26,6 @@ brew install gh
 
 brew install mise
 
-# eza
-
-brew install eza
-
 # Neovim
 
 brew install neovim
@@ -41,10 +37,6 @@ brew install helix
 # Visual Studio Code
 
 brew install visual-studio-code
-
-# delta
-
-brew install git-delta
 
 #
 
