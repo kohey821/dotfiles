@@ -20,7 +20,11 @@ sudo pacman -S fd
 
 # Mise
 
-sudo sudo pacman -S mise
+sudo pacman -S mise
+
+# eza
+
+sudo pacman -S eza
 
 # Helix
 

@@ -1,11 +1,11 @@
 # Packages
 
+nix profile remove --all
+nix-collect-garbage -d
+
 nix profile add \
   nixpkgs#delta \
-  nixpkgs#eza \
   nixpkgs#neovim
-
-nix-collect-garbage -d
 
 # Tmux Plugin Manager
 

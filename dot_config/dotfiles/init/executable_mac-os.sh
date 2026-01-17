@@ -22,6 +22,10 @@ brew install fd
 
 brew install mise
 
+# eza
+
+brew install eza
+
 # Helix
 
 brew install helix
