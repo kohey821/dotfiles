@@ -2,17 +2,8 @@
 
 nix profile add \
   nixpkgs#delta \
-  nixpkgs#fd \
-  nixpkgs#fzf \
-  nixpkgs#gh \
-  nixpkgs#jq \
-  nixpkgs#mise \
-  nixpkgs#neovim \
-  nixpkgs#ranger \
-  nixpkgs#ripgrep \
-  nixpkgs#starship \
-  nixpkgs#tmux \
-  nixpkgs#unzip
+  nixpkgs#eza \
+  nixpkgs#neovim
 
 nix-collect-garbage -d
 
