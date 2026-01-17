@@ -1,12 +1,3 @@
-# Packages
-
-nix profile remove --all
-nix-collect-garbage -d
-
-nix profile add \
-  nixpkgs#delta \
-  nixpkgs#neovim
-
 # Tmux Plugin Manager
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

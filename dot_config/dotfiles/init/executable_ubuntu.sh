@@ -43,11 +43,19 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 sudo apt install -y eza
 
+# Neovim
+
+# TODO
+
 # Helix
 
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update
 sudo apt install helix
+
+# delta
+
+# TODO
 
 #
 

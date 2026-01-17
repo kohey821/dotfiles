@@ -4,7 +4,7 @@
 
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm --needed \
+sudo pacman -S --noconfirm \
   curl \
   fish \
   fzf \
@@ -16,19 +16,27 @@ sudo pacman -S --noconfirm --needed \
   unzip \
   wget
 
-sudo pacman -S --noconfirm --needed fd
+sudo pacman -S --noconfirm fd
 
 # Mise
 
-sudo pacman -S --noconfirm --needed mise
+sudo pacman -S --noconfirm mise
 
 # eza
 
-sudo pacman -S --noconfirm --needed eza
+sudo pacman -S --noconfirm eza
+
+# Neovim
+
+sudo pacman -S --noconfirm neovim
 
 # Helix
 
-sudo pacman -S --noconfirm --needed helix
+sudo pacman -S --noconfirm helix
+
+# delta
+
+sudo pacman -S --noconfirm git-delta
 
 #
 

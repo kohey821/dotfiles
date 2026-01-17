@@ -26,9 +26,17 @@ brew install mise
 
 brew install eza
 
+# Neovim
+
+brew install neovim
+
 # Helix
 
 brew install helix
+
+# delta
+
+brew install git-delta
 
 #
 
