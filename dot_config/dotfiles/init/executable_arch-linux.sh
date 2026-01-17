@@ -18,6 +18,10 @@ sudo pacman -S --noconfirm \
 
 sudo pacman -S --noconfirm fd
 
+# GitHub CLI
+
+sudo pacman -S --noconfirm github-cli
+
 # Mise
 
 sudo pacman -S --noconfirm mise

@@ -18,6 +18,10 @@ brew install \
 
 brew install fd
 
+# GitHub CLI
+
+brew install gh
+
 # Mise
 
 brew install mise
