@@ -38,6 +38,10 @@ sudo pacman -S --noconfirm neovim
 
 sudo pacman -S --noconfirm helix
 
+# Visual Studio Code
+
+# TODO
+
 # delta
 
 sudo pacman -S --noconfirm git-delta
