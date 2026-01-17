@@ -2,9 +2,9 @@
 
 #
 
-sudo pacman -Syyu
+sudo pacman -Syu --noconfirm
 
-sudo pacman -S \
+sudo pacman -S --noconfirm --needed \
   curl \
   fish \
   fzf \
@@ -16,19 +16,19 @@ sudo pacman -S \
   unzip \
   wget
 
-sudo pacman -S fd
+sudo pacman -S --noconfirm --needed fd
 
 # Mise
 
-sudo pacman -S mise
+sudo pacman -S --noconfirm --needed mise
 
 # eza
 
-sudo pacman -S eza
+sudo pacman -S --noconfirm --needed eza
 
 # Helix
 
-sudo pacman -S helix
+sudo pacman -S --noconfirm --needed helix
 
 #
 
