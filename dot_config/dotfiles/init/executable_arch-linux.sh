@@ -36,10 +36,6 @@ sudo pacman -S --noconfirm --needed neovim
 
 sudo pacman -S --noconfirm --needed helix
 
-# Visual Studio Code
-
-yay -S --noconfirm --needed visual-studio-code-bin
-
 #
 
 source $HOME/.config/dotfiles/init/common.sh

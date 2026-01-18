@@ -34,10 +34,6 @@ brew install neovim
 
 brew install helix
 
-# Visual Studio Code
-
-brew install visual-studio-code
-
 #
 
 source $HOME/.config/dotfiles/init/common.sh

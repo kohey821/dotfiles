@@ -53,10 +53,6 @@ sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update
 sudo apt install helix
 
-# Visual Studio Code
-
-# TODO
-
 #
 
 source $HOME/.config/dotfiles/init/common.sh
