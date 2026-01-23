@@ -20,17 +20,23 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Tasks
 
 cat <<'EOT'
-下記を確認してください。
+
+--------------------------------------------------------------------------------
+
+やること
 
 ~/.bashrc に
 source $HOME/.config/dotfiles/bash/rc.sh
-の追記。
+の追加
 
 ~/.config/fish/config.fish に
 source $HOME/.config/dotfiles/fish/rc.fish
-の追記。
+の追加
 
 ~/.zshrc に
 source $HOME/.config/dotfiles/z-shell/rc.zsh
-の追記。
+の追加
+
+--------------------------------------------------------------------------------
+
 EOT
