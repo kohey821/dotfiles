@@ -26,3 +26,6 @@ set relativenumber
 
 set colorcolumn=80,100
 
+set hlsearch
+set incsearch
+
