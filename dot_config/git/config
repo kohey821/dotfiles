@@ -1,0 +1,38 @@
+[alias]
+  # ArchiveをExtractするのでax
+  ax = "! f() { T=$(mktemp -d); git archive $1 | tar -x -C $T; echo $T; }; f"
+  # RevisionをOpenするのでor
+  or = "! f() { ${2:-$EDITOR} $(git ax $1); }; f"
+
+  br = branch
+  ci = commit
+  co = checkout
+  ls = ls-files
+  st = status
+  tree = log --graph --abbrev-commit --decorate --date=relative --pretty=format:'%C(auto)%h%Creset %C(auto)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
+  tree-all = tree --all
+[core]
+  autocrlf = input
+  editor = nvim
+  filemode = false
+  pager = delta
+[credential]
+  helper = store
+[delta]
+  line-numbers = true
+  navigable = true
+[diff]
+  colorMoved = dimmed-zebra
+[fetch]
+  prune = true
+[init]
+  defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[merge]
+  conflictStyle = zdiff3
+  tool = vimdiff
+[pull]
+  rebase = false
+[user]
+  useConfigOnly = true
