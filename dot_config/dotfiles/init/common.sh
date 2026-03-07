@@ -8,6 +8,8 @@ cargo install \
   git-delta \
   eza
 
+cargo install zoxide --locked
+
 # Tmux Plugin Manager
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

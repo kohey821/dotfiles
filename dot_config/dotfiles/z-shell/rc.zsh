@@ -5,7 +5,6 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
-zinit load agkozak/zsh-z
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-completions
 zinit load zsh-users/zsh-syntax-highlighting
@@ -17,6 +16,7 @@ autoload -Uz _zinit
 
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 #
 
