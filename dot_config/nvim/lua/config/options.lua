@@ -7,5 +7,11 @@
 -- vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
 
+vim.opt.colorcolumn = "80,100"
+
+-- LS Options
+
 -- NOTE: https://www.lazyvim.org/extras/lang/php
 vim.g.lazyvim_php_lsp = "intelephense"
+
+--
