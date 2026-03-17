@@ -9,21 +9,22 @@ zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-completions
 zinit load zsh-users/zsh-syntax-highlighting
 
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+# Completion Setup
 
-#
+# NOTE: zinit.zsh 読み込み後かつ zoxide init 前
+autoload -Uz compinit
+compinit
+
+# Setup
 
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-#
-
 source $HOME/.config/dotfiles/shell/env.sh
 source $HOME/.config/dotfiles/shell/aliases.sh
 
-#
+# History
 
 HISTFILE=~/.zsh_history # NOTE: 指定しないとDistributionの初期設定で消される？
 HISTSIZE=10000
@@ -49,9 +50,6 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
 # Completion
-
-autoload -Uz compinit
-compinit
 
 # 選択しているものの強調
 zstyle ':completion:*' menu select
