@@ -1,4 +1,12 @@
-alias '..'='cd ..'
+alias '...'='cd ../..'
+alias '....'='cd ../../..'
+alias '.....'='cd ../../../..'
+alias '......'='cd ../../../../..'
+alias '.......'='cd ../../../../../..'
+alias '........'='cd ../../../../../../..'
+alias '.........'='cd ../../../../../../../..'
+alias '..........'='cd ../../../../../../../../..'
+alias '...........'='cd ../../../../../../../../../..'
 
 alias c=chezmoi
 
@@ -18,6 +26,9 @@ alias ll='ls -alF'
 alias r=ranger
 
 alias rm='rm -i'
+
+alias rp='realpath'
+type grealpath &>/dev/null && alias rp='grealpath'
 
 alias t=tmux
 alias ta='t attach-session'
