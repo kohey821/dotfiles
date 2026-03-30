@@ -19,6 +19,9 @@ alias r=ranger
 
 alias rm='rm -i'
 
+alias rp='realpath'
+type grealpath &>/dev/null && alias rp='grealpath'
+
 alias t=tmux
 alias ta='t attach-session'
 alias tk='t kill-session'
