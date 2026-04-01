@@ -17,10 +17,9 @@ compinit
 
 # Setup
 
-eval "$(mise activate zsh)"
-# NOTE: macOS (brew) では `eval "$(mise activate zsh)"` を実行すると
-# 補完が壊れる？っぽい (brew と競合してる？) ので手動で source する。
-source <(mise completion zsh)
+# NOTE: macOS brew ではすでに実行されていて？もう一度実行すると Completion が壊れる？ので
+# PATH に Mise で Install したもの (`usage` は絶対 Install する) が無い場合に実行する
+echo $PATH | grep -q "/mise/installs/" || eval "$(mise activate zsh)"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
