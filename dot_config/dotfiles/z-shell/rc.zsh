@@ -19,7 +19,7 @@ compinit
 
 eval "$(mise activate zsh)"
 # NOTE: macOS (brew) では `eval "$(mise activate zsh)"` を実行すると
-# 補完が壊れる？っぽい (brew と競合してる？) ので手動で source する。
+# 補完が壊れる？っぽい (brew と競合してる？) ので手動で source する
 source <(mise completion zsh)
 
 eval "$(starship init zsh)"
