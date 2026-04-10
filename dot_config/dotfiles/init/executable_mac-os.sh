@@ -11,7 +11,6 @@ brew install \
   jq \
   ranger \
   ripgrep \
-  starship \
   tmux \
   unzip \
   wget

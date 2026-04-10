@@ -8,6 +8,8 @@ cargo install \
   git-delta \
   eza
 
+cargo install starship --locked
+
 cargo install zoxide --locked
 
 # Tmux Plugin Manager

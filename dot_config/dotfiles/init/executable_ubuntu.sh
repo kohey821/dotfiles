@@ -15,7 +15,6 @@ sudo apt install -y \
   jq \
   ranger \
   ripgrep \
-  starship \
   tmux \
   unzip \
   wget

@@ -15,7 +15,6 @@ sudo pacman -S --noconfirm --needed \
   jq \
   ranger \
   ripgrep \
-  starship \
   tmux \
   unzip \
   wget
