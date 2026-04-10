@@ -21,21 +21,9 @@ sudo pacman -S --noconfirm --needed \
 
 sudo pacman -S --noconfirm --needed fd
 
-# GitHub CLI
-
-sudo pacman -S --noconfirm --needed github-cli
-
 # Mise
 
 sudo pacman -S --noconfirm --needed mise
-
-# Neovim
-
-sudo pacman -S --noconfirm --needed neovim
-
-# Helix
-
-sudo pacman -S --noconfirm --needed helix
 
 #
 
