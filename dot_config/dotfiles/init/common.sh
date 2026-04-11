@@ -27,11 +27,16 @@ cat <<'EOT'
 
 --------------------------------------------------------------------------------
 
-やること
+各 Shell 用 Run Commands は
+`$HOME/.config/dotfiles`
+にあるっぺ。
 
-使用 Shell の Run Commands 等に
-source $HOME/.config/dotfiles/<使用 Shell>/rc.sh
-の追加
+例えば `Z Shell` の場合は `.zshrc` 等に
+`source $HOME/.config/dotfiles/z-shell/rc.zsh`
+だっぺ。
+
+`$HOME/.config/dotfiles/shell/` は
+POSIX な Shell の共通だっぺ。
 
 --------------------------------------------------------------------------------
 
