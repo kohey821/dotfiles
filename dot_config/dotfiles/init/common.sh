@@ -29,16 +29,8 @@ cat <<'EOT'
 
 やること
 
-~/.bashrc に
-source $HOME/.config/dotfiles/bash/rc.sh
-の追加
-
-~/.config/fish/config.fish に
-source $HOME/.config/dotfiles/fish/rc.fish
-の追加
-
-~/.zshrc に
-source $HOME/.config/dotfiles/z-shell/rc.zsh
+使用 Shell の Run Commands 等に
+source $HOME/.config/dotfiles/<使用 Shell>/rc.sh
 の追加
 
 --------------------------------------------------------------------------------
