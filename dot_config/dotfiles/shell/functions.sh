@@ -1,4 +1,4 @@
-function pbcopy() {
+function scb() {
   local input
 
   case "$#" in
