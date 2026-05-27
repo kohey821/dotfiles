@@ -13,7 +13,6 @@ sudo pacman -S --noconfirm --needed \
   fish \
   fzf \
   jq \
-  ranger \
   ripgrep \
   tmux \
   unzip \
