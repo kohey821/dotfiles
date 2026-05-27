@@ -24,8 +24,6 @@ alias ls=eza
 alias la='ls -A'
 alias ll='ls -alF'
 
-alias r=ranger
-
 alias rm='rm -i'
 
 alias rp='realpath'
