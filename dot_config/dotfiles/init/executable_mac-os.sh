@@ -9,7 +9,6 @@ brew install \
   fish \
   fzf \
   jq \
-  ranger \
   ripgrep \
   tmux \
   unzip \

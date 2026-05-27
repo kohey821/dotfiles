@@ -13,7 +13,6 @@ sudo apt install -y \
   fish \
   fzf \
   jq \
-  ranger \
   ripgrep \
   tmux \
   unzip \
