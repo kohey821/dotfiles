@@ -9,18 +9,10 @@ zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-completions
 zinit load zsh-users/zsh-syntax-highlighting
 
-# Completion Setup
-
-# NOTE: zinit.zsh 読み込み後かつ zoxide init 前
-autoload -Uz compinit
-compinit
-
 # Setup
 
-eval "$(mise activate zsh)"
-# NOTE: macOS (brew) では `eval "$(mise activate zsh)"` を実行すると
-# 補完が壊れる？っぽい (brew と競合してる？) ので手動で source する
-source <(mise completion zsh)
+autoload -Uz compinit
+compinit
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
