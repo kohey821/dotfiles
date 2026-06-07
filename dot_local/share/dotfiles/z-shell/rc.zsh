@@ -17,9 +17,7 @@ compinit
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-source $HOME/.local/share/dotfiles/shell/env.sh
-source $HOME/.local/share/dotfiles/shell/aliases.sh
-source $HOME/.local/share/dotfiles/shell/functions.sh
+source $HOME/.local/share/dotfiles/shell/rc.sh
 
 # History
 
@@ -37,8 +35,6 @@ setopt HIST_IGNORE_ALL_DUPS # 全ての重複
 # setopt INC_APPEND_HISTORY
 # or
 setopt SHARE_HISTORY
-
-stty -ixon # Ctrl+Sを使えるように
 
 bindkey -e
 bindkey '^R' history-incremental-search-backward
