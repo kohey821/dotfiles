@@ -1,3 +1,5 @@
+source ~/.config/dotfiles/vim/plugin.vim
+
 " Directories
 
 if !isdirectory(expand('~/.local/state/vim/swap'))

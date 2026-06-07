@@ -15,7 +15,7 @@ call plug#end()
 
 " CoC Plugin
 
-source ~/.config/dotfiles/vim/coc/init.vim
+source ~/.config/dotfiles/vim/coc/rc.vim
 
 " Which Key Plugin
 
@@ -25,8 +25,4 @@ let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
-
-"
-
-source ~/.config/dotfiles/vim/rc.vim
 
