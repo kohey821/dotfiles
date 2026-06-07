@@ -26,4 +26,4 @@ sudo pacman -S --noconfirm --needed mise
 
 #
 
-source $HOME/.config/dotfiles/init/common.sh
+source $HOME/.local/share/dotfiles/init/common.sh

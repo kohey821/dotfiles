@@ -8,5 +8,5 @@
 ## Init
 
 ```sh
-~/.config/dotfiles/init/<os>.sh
+~/.local/share/dotfiles/init/<os>.sh
 ```

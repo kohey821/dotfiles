@@ -25,9 +25,9 @@ source <(mise completion zsh)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-source $HOME/.config/dotfiles/shell/env.sh
-source $HOME/.config/dotfiles/shell/aliases.sh
-source $HOME/.config/dotfiles/shell/functions.sh
+source $HOME/.local/share/dotfiles/shell/env.sh
+source $HOME/.local/share/dotfiles/shell/aliases.sh
+source $HOME/.local/share/dotfiles/shell/functions.sh
 
 # History
 

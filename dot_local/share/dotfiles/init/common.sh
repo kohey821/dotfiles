@@ -27,16 +27,23 @@ cat <<'EOT'
 
 --------------------------------------------------------------------------------
 
-各 Shell 用 Run Commands は
-`$HOME/.config/dotfiles`
-にあるっぺ。
+各設定は `$HOME/.local/share/dotfiles` から読み込む。
 
-例えば `Z Shell` の場合は `.zshrc` 等に
-`source $HOME/.config/dotfiles/z-shell/rc.zsh`
-だっぺ。
+Z Shell:
+  source $HOME/.local/share/dotfiles/z-shell/rc.zsh
 
-`$HOME/.config/dotfiles/shell/` は
-POSIX な Shell の共通だっぺ。
+tmux:
+  source-file ~/.local/share/dotfiles/tmux/rc.conf
+
+Vim:
+  source ~/.local/share/dotfiles/vim/rc.vim
+
+Git:
+  [include]
+    path = ~/.local/share/dotfiles/git/config
+
+Mercurial:
+  %include ~/.local/share/dotfiles/hg/rc
 
 --------------------------------------------------------------------------------
 

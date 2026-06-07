@@ -15,7 +15,7 @@ call plug#end()
 
 " CoC Plugin
 
-source ~/.config/dotfiles/vim/coc/rc.vim
+source ~/.local/share/dotfiles/vim/coc/rc.vim
 
 " Which Key Plugin
 
