@@ -20,10 +20,6 @@ sudo pacman -S --noconfirm --needed \
 
 sudo pacman -S --noconfirm --needed fd
 
-# Mise
-
-sudo pacman -S --noconfirm --needed mise
-
 #
 
 source $HOME/.local/share/dotfiles/init/common.sh

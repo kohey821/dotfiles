@@ -16,10 +16,6 @@ brew install \
 
 brew install fd
 
-# Mise
-
-brew install mise
-
 #
 
 source $HOME/.local/share/dotfiles/init/common.sh
