@@ -1,4 +1,4 @@
-source ~/.config/dotfiles/vim/plugin.vim
+source ~/.local/share/dotfiles/vim/plugin.vim
 
 " Directories
 

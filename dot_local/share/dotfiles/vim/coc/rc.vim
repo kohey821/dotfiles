@@ -1,4 +1,4 @@
-source ~/.config/dotfiles/vim/coc/config.vim
+source ~/.local/share/dotfiles/vim/coc/config.vim
 
 let g:coc_global_extensions = [
       \ 'coc-diagnostic',
