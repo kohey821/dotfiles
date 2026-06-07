@@ -48,9 +48,15 @@ bindkey '^N' history-beginning-search-forward
 
 # Completion
 
-# 選択しているものの強調
-zstyle ':completion:*' menu select
+# Oh My Zsh から移植 BEGIN
+# 補完機能を有効化
+zmodload -i zsh/complist
+WORDCHARS=''
+setopt auto_menu complete_in_word always_to_end
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|=*' 'l:|=* r:|=*'
 
-# Oh My Zshの様なFile名補完
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# Shift+Tab で補完メニューを逆方向に移動
+bindkey "${terminfo[kcbt]}" reverse-menu-complete
+# Oh My Zsh から移植 END
 
