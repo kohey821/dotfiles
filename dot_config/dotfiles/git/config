@@ -36,3 +36,5 @@
   rebase = false
 [user]
   useConfigOnly = true
+
+# vim: set ft=gitconfig:
