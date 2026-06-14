@@ -10,6 +10,7 @@ zinit load zsh-users/zsh-syntax-highlighting
 
 # Initialization
 
+# Emacs Key
 bindkey -e
 
 autoload -Uz compinit
