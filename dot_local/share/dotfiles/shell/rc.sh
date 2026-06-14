@@ -15,15 +15,12 @@ alias '.........'='cd ../../../../../../../..'
 alias '..........'='cd ../../../../../../../../..'
 alias '...........'='cd ../../../../../../../../../..'
 
-alias c=chezmoi
-
 alias d=docker
 
-alias f=fish
+alias f='find'
 
 alias g=git
 
-alias grep='grep --color=auto'
 alias gr='grep'
 
 alias ls=eza
@@ -34,11 +31,10 @@ alias rm='rm -i'
 
 alias rp='realpath'
 
-alias t=tmux
-alias ta='t attach-session'
-alias tk='t kill-session'
-alias tl='t list-sessions'
-alias tn='t new-session'
+alias ta='tmux attach-session'
+alias tk='tmux kill-session'
+alias tl='tmux list-sessions'
+alias tn='tmux new-session'
 
 #
 
