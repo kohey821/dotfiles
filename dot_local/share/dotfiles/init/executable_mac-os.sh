@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-
+#
 brew install coreutils
 
 brew install \
@@ -17,5 +17,5 @@ brew install \
 brew install fd
 
 #
-
+#
 source $HOME/.local/share/dotfiles/init/common.sh

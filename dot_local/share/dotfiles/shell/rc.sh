@@ -1,20 +1,7 @@
-#
-
 export EDITOR=nvim
 
 #
-
-alias '..'='cd ..'
-alias '...'='cd ../..'
-alias '....'='cd ../../..'
-alias '.....'='cd ../../../..'
-alias '......'='cd ../../../../..'
-alias '.......'='cd ../../../../../..'
-alias '........'='cd ../../../../../../..'
-alias '.........'='cd ../../../../../../../..'
-alias '..........'='cd ../../../../../../../../..'
-alias '...........'='cd ../../../../../../../../../..'
-
+#
 alias d=docker
 
 alias f='find'
@@ -31,11 +18,13 @@ alias rm='rm -i'
 
 alias rp='realpath'
 
+alias t='trans'
+
 alias ta='tmux attach-session'
 alias tk='tmux kill-session'
 alias tl='tmux list-sessions'
 alias tn='tmux new-session'
 
 #
-
+#
 stty -ixon

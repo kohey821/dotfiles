@@ -1,7 +1,7 @@
 source ~/.local/share/dotfiles/vim/plugin.vim
 
-" Directories
 
+" Directories
 if !isdirectory(expand('~/.local/state/vim/swap'))
   silent! call mkdir(expand('~/.local/state/vim/swap'), 'p')
 endif
@@ -17,7 +17,6 @@ if !isdirectory(expand('~/.local/state/vim/undo'))
 endif
 set undodir=~/.local/state/vim/undo//
 
-"
 
 set mouse=a
 

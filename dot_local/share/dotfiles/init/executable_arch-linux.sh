@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-
+#
 sudo pacman -Syu --noconfirm --needed
 
 sudo pacman -S --noconfirm --needed yay
@@ -21,5 +21,5 @@ sudo pacman -S --noconfirm --needed \
 sudo pacman -S --noconfirm --needed fd
 
 #
-
+#
 source $HOME/.local/share/dotfiles/init/common.sh
