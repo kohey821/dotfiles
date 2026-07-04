@@ -1,5 +1,4 @@
 # Zinit
-
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
@@ -8,8 +7,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit load zsh-users/zsh-completions
 zinit load zsh-users/zsh-syntax-highlighting
 
-# Initialization
 
+# Initialization
 # Emacs Key
 bindkey -e
 
@@ -24,8 +23,8 @@ source <(fzf --zsh)
 
 source $HOME/.local/share/dotfiles/shell/rc.sh
 
-# History
 
+# History
 # NOTE: Default で定義されないことがあるので
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -42,10 +41,9 @@ setopt HIST_IGNORE_ALL_DUPS # 全ての重複
 # or
 setopt SHARE_HISTORY
 
+
 # Completion
-
 # Oh My Zsh からの移植
-
 # 補完機能を有効化
 zmodload -i zsh/complist
 WORDCHARS=''

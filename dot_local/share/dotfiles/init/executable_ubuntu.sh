@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-
+#
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install -y build-essential
@@ -21,5 +21,5 @@ sudo apt install -y \
 sudo apt install -y fd-find
 
 #
-
+#
 source $HOME/.local/share/dotfiles/init/common.sh
