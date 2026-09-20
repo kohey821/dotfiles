@@ -1,3 +1,5 @@
+alias c=opencode
+
 alias d=docker
 
 alias g=git
